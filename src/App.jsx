@@ -80,7 +80,7 @@ function App() {
           <ErrorScreen/>
         :
         <>
-          <div>
+          <div className='card'>
             <LocationInfo location={location} />
               <div>
                 {

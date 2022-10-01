@@ -14,9 +14,15 @@ const CardResident = ({url}) => {
 console.log(resident)
 
   return (
+<<<<<<< Updated upstream
     <article className='card'>
         <header className='card__header'>
             <img className='card__img' src={resident?.image} alt="" />
+=======
+    <article className='card__principal'>
+        <header>
+            <img src={resident?.image} alt="" />
+>>>>>>> Stashed changes
             <div>
                 <div className='circle'></div>
                 <span>{resident?.status}</span>
