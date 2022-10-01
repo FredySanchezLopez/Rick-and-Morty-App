@@ -80,9 +80,9 @@ function App() {
           <ErrorScreen/>
         :
         <>
-          <div>
+          <div >
             <LocationInfo location={location} />
-              <div>
+              <div className='cart'>
                 {
                   location?.residents.map(url => (
                     <CardResident

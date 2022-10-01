@@ -14,17 +14,17 @@ const CardResident = ({url}) => {
 console.log(resident)
 
   return (
-    <article>
-        <header>
+    <article className='card__principal'>
+        <header className='header'>
             <img src={resident?.image} alt="" />
             <div>
                 <div className='circle'></div>
-                <span>{resident?.status}</span>
+                <span className='span'>{resident?.status}</span>
             </div>
         </header>
         <section>
             <h3>{resident?.name}</h3>
-            <ul>
+            <ul className='ul'>
                 <li><span>Specie:</span>{resident?.species}</li>
                 <li><span>Origin:</span>{resident?.origin.name}</li>
                 <li><span>Episodes where appear: </span>{resident?.episode.length}</li>
