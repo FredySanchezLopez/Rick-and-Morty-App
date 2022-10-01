@@ -1,17 +1,13 @@
 import React from 'react'
 
-const FilterList = ({suggestedList, setSearchInput}) => {
-
-    const handleClick = id => setSearchInput(id)
-
+const FilterList = ({suggedList,setSearchInput}) => {
+    const handlClick = id => setSearchInput(id)
   return (
-    <ul>
-        {
-            suggestedList?.map(location => (
-                <li onClick={() => handleClick(location.id)} key={location.id}>{location.name}</li>
-            ))
-        }
-    </ul>
+    <div>FilterList
+        <ul>
+           <li onClick={() => handlClick(location.id) }></li>
+        </ul>
+    </div>
   )
 }
 
