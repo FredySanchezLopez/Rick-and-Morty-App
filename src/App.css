@@ -228,11 +228,16 @@ body{
     }
 }
 
-@media (max-width: 391px) {
+@media (max-width: 394px) {
     .filter__card{
         position: absolute;
         left: 1px;
         width: 100%;
+        
+    }
+    .banner__header{
+        background-image: url(https://p4.wallpaperbetter.com/wallpaper/743/877/224/rick-and-morty-morty-rick-laboratory-wallpaper-preview.jpg);
+        background-position-x: center;   
     }
     .locationInfo{
         font-size:8px;
