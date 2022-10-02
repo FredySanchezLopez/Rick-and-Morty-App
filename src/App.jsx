@@ -83,7 +83,7 @@ function App() {
         <>
           <div >
             <div className='locationInfo'><LocationInfo location={location} /></div>
-              <div className='cart'>
+              <div className='card__principal'>
                 {
                   location?.residents.map(url => (
                     <CardResident
