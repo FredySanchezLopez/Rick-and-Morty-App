@@ -61,14 +61,15 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Rick And Morty</h1>
-        <form onSubmit={handleSubmit}>
+      <div className='banner__header'></div>
+        <form className='card__form' onSubmit={handleSubmit}>
           <input
+            className='card__input'
             id='idLocation'
             placeholder='Enter another number from 1 to 126' type="text" 
             onChange={handleChange}
           />
-          <button>Search</button>
+          <button className='btn__input'>Search</button>
           <FilterList 
             suggestedList = {suggestedList}
             setSearchInput = {setSearchInput}
@@ -81,7 +82,7 @@ function App() {
         :
         <>
           <div >
-            <LocationInfo location={location} />
+            <div className='locationInfo'><LocationInfo location={location} /></div>
               <div className='cart'>
                 {
                   location?.residents.map(url => (

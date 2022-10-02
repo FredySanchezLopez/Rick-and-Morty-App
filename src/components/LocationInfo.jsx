@@ -3,12 +3,12 @@ import React from 'react'
 const LocationInfo = ({location}) => {
     console.log(location);
   return (
-    <article>
+    <article className='card__location'>
         <h2>{location?.name}</h2>
-        <ul>
-            <li><span>Type:</span>{location?.type}</li>
-            <li><span>Dimension:</span>{location?.dimension}</li>
-            <li><span>Population:</span>{location?.residents.length}</li>
+        <ul className='ul__card__location'>
+            <span>Type:</span><li>{location?.type}</li>
+            <span>Dimension:</span><li>{location?.dimension}</li>
+            <span>Population:</span><li>{location?.residents.length}</li>
         </ul>
     </article>
   )

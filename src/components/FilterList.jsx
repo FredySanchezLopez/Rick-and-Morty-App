@@ -5,7 +5,7 @@ const FilterList = ({suggestedList, setSearchInput}) => {
     const handleClick = id => setSearchInput(id)
 
   return (
-    <ul>
+    <ul className='filter__card'>
         {
             suggestedList?.map(location => (
                 <li onClick={() => handleClick(location.id)} key={location.id}>{location.name}</li>
