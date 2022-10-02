@@ -165,11 +165,12 @@ body{
 .btn__input{
     height: 40px;
     width: 150px;
+    cursor: pointer;
 }
 
 .filter__card{
     position: absolute;
-    top: 325px;
+    top: 420px;
     left: 490px;
     height: 100vh;
     width: 530px;
