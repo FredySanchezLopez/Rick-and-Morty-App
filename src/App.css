@@ -5,6 +5,8 @@
 }
 body{
     background-color: #06292E;
+    max-width: 1440px;
+    min-width: 390px;
 }
 .App{
     width: 100%;
@@ -171,7 +173,7 @@ body{
 .filter__card{
     position: absolute;
     top: 420px;
-    left: 490px;
+   
     height: 100vh;
     width: 530px;
     color: #fff;
@@ -190,6 +192,56 @@ body{
 .filter__card li:hover{
     cursor: pointer;
     box-shadow: 1px 1px 10px #fff;
+}
+@media (max-width: 1389px) {
+    .filter__card{
+        position: absolute;
+        left: 352px;
+    }
+}
+@media (max-width: 1200px) {
+    .filter__card{
+        position: absolute;
+        left: 255px;
+    }
+}
+@media (max-width: 912px) {
+    .filter__card{
+        position: absolute;
+        left: 115px;
+    }
+}
+@media (max-width: 820px) {
+    .filter__card{
+        position: absolute;
+        left: 69px;
+    }
+}
+@media (max-width: 700px) {
+    .filter__card{
+        position: absolute;
+        left: 8px;
+    }
+    .card__location {
+        width: 90%;
+        margin: 6px;
+    }
+}
+
+@media (max-width: 391px) {
+    .filter__card{
+        position: absolute;
+        left: 1px;
+        width: 100%;
+    }
+    .locationInfo{
+        font-size:8px;
+        
+    }
+    .card__location {
+        width: 90%;
+        margin: 6px;
+    }
 }
 
 
